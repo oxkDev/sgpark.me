@@ -1,2 +1,2 @@
 # sgpark.me
-Singapore parking app #1
+This is a parking app for Singapore :D
