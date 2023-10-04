@@ -1,4 +1,6 @@
-String sampleJSONObjResult = '''{
+import 'dart:convert';
+
+const String sampleJSONObjResult = '''{
   "Status": "Success",
   "Message": "",
   "Result": [{
@@ -51,3 +53,4 @@ String sampleJSONObjResult = '''{
 // Map<String, String> sampleData = {
 //   ""
 // }
+// JsonDecoder(sampleJSONObjResult);

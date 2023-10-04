@@ -41,7 +41,7 @@ class LocationScreen extends StatelessWidget {
         padding: EdgeInsets.symmetric(
           horizontal: MediaQuery.of(context).size.width * 0.02,
         ),
-        child: PanelView(hasData: true),
+        child: const PanelView(hasData: true),
       ),
     );
   }

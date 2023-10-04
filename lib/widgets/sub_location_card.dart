@@ -23,10 +23,10 @@ class SubLocation extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    double height = MediaQuery.of(context).size.width * 0.1 + 20;
+    double unit = MediaQuery.of(context).size.width * 0.1 + 20;
 
     return CardSecondary(
-      height: height,
+      height: unit,
       child: TextButton(
         style: ButtonStyle(
           padding: MaterialStateProperty.all(EdgeInsets.zero),
@@ -60,7 +60,7 @@ class SubLocation extends StatelessWidget {
                       title,
                       style: TextStyle(
                         color: MainColours.darkGrey,
-                        fontSize: height * 0.3,
+                        fontSize: unit * 0.3,
                       ),
                     ),
                     Row(
@@ -71,7 +71,7 @@ class SubLocation extends StatelessWidget {
                           price,
                           style: TextStyle(
                             color: MainColours.darkGrey,
-                            fontSize: height * 0.3,
+                            fontSize: unit * 0.3,
                           ),
                         ),
                         Text(
@@ -80,7 +80,7 @@ class SubLocation extends StatelessWidget {
                             color: sheltered
                                 ? SubColours.darkGreen
                                 : SubColours.red,
-                            fontSize: height * 0.3,
+                            fontSize: unit * 0.3,
                           ),
                         ),
                       ],
@@ -90,8 +90,8 @@ class SubLocation extends StatelessWidget {
               ),
             ),
             Container(
-              height: height,
-              width: height,
+              height: unit,
+              width: unit,
               decoration: BoxDecoration(
                 color: lots / maxLots < 1 / 3
                     ? SubColours.red
@@ -113,7 +113,7 @@ class SubLocation extends StatelessWidget {
                       lots.toString(),
                       style: TextStyle(
                         color: MainColours.white,
-                        fontSize: height * 0.46,
+                        fontSize: unit * 0.40,
                       ),
                     ),
                   ),
@@ -124,7 +124,7 @@ class SubLocation extends StatelessWidget {
                       "lots",
                       style: TextStyle(
                         color: MainColours.white,
-                        fontSize: height * 0.25,
+                        fontSize: unit * 0.25,
                       ),
                     ),
                   ),

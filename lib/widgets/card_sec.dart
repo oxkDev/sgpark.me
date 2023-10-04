@@ -27,18 +27,14 @@ class CardSecondary extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: margin == null
-          ? EdgeInsets.all(MediaQuery.of(context).size.width * 0.03)
-          : margin,
+      margin: margin ?? EdgeInsets.all(MediaQuery.of(context).size.width * 0.03),
       padding: padding,
       height: height,
       width: double.infinity,
       decoration: BoxDecoration(
         color: backgroundColour,
-        borderRadius: borderRadius == null
-            ? BorderRadius.all(
-                Radius.circular(MediaQuery.of(context).size.width * 0.025))
-            : borderRadius!,
+        borderRadius: borderRadius?? BorderRadius.all(
+                Radius.circular(MediaQuery.of(context).size.width * 0.025)),
         boxShadow: shadow == null
             ? null
             : <BoxShadow>[
